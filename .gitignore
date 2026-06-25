@@ -1,9 +1,8 @@
-# ---- Data (don't commit large datasets) ----
+#
 data/ninapro/
 *.csv.large
-# (keep small own-captures; use Git LFS if they grow)
 
-# ---- Python / ML ----
+# ML
 __pycache__/
 *.py[cod]
 .venv/
@@ -17,7 +16,7 @@ env/
 *.ckpt
 *.pth
 
-# ---- FPGA / Vivado / Gowin ----
+# Tang Nano 20k
 *.jou
 *.log
 *.str
@@ -31,7 +30,7 @@ gw_ide/
 *.fs
 *.bit
 
-# ---- STM32 / C build ----
+# STM32
 build/
 *.o
 *.elf
@@ -41,14 +40,15 @@ build/
 Debug/
 Release/
 
-# ---- KiCad ----
+# Kicad
 *-backups/
 *.kicad_pcb-bak
 *.kicad_sch-bak
 fp-info-cache
 *.net
+.history/
 
-# ---- OS / editor ----
+
 .DS_Store
 Thumbs.db
 .vscode/
